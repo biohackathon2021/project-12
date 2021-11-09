@@ -63,5 +63,7 @@ unique_combo %>%
            into = c("person_id_1", "person_id_2"),
            sep = "\\|")
 ```
+Write csv:
+
 
 
