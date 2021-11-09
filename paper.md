@@ -1,22 +1,29 @@
 ---
 title: '# Network analysis of specimen co-collection'
 tags:
-  - replace with your own keywords
-  - at least 3 is recommended
+  - Bionomia
+  - biodiversity
+  - recording behaviour
 authors:
-  - name: First Last
+  - name: Sofie Meeus
     orcid: 0000-0000-0000-0000
     affiliation: 1
-  - name: Second Last
+- name: Lien Reyserhove
     orcid: 0000-0000-0000-0000
     affiliation: 2
+  - name: Maarten Trekels
+    orcid: 0000-0000-0000-0000
+    affiliation: 1
+  - name: Quentin Groom
+    orcid: 0000-0000-0000-0000
+    affiliation: 1
 
 affiliations:
- - name: Institution 1, address, city, country
+ - name: Meise Botanic Garden, Nieuwelaan 38, 1860 Meise, Belgium
    index: 1
- - name: Institution 1, address, city, country
+ - name: Instituut voor Natuur- en Bosonderzoek, Team Oscibio, Havenlaan 88, 1000 Brussel
    index: 2
-date: 01 January 2020
+date: 09 November 2021
 bibliography: paper.bib
 authors_short: Last et al. (2021) BioHackrXiv  template
 group: BioHackrXiv
