@@ -1,2 +1,2 @@
 # project-12
-Files and code for project 12 BiodiversityData
+Files and code for the network analysis on the Bionomia collector data
