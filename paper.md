@@ -30,8 +30,7 @@ group: BioHackrXiv
 event: BioHackathon Europe 2021
 ---
 
-# Introduction or Background
-
+# Introduction
 Add to this section a couple of paragraphs introducing the work done dring the BioHackathon, CodeFest, VoCamp or Sprint event. Please add references whenever needed, for instance [@Katayama:2010].
 
 Please separate paragraphs with a double line.
@@ -83,7 +82,9 @@ For citations of references, we prefer the use of parenthesis, last name and yea
 * And remember, software and data need a license for them to be used by others, no license means no clear rules so nobody could legally use a non-licensed research object, whatever that object is
 
 # Acknowledgements
-Please always remember to acknowledge the BioHackathon, CodeFest, VoCamp, Sprint or similar where this work was (partially) developed.
+The authors thank the organizers BioHackathon-Europe for their support and the smoothrunning of the event. This work was also facilitated by the Research Foundation – Flanders research infrastructure under grant number FWO I001721N and the BiCIKL project of the European Union's Horizon 2020 Research and Innovation action under grant agreement No 101007492.
+
+
 
 # References
 
