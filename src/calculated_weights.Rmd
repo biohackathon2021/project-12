@@ -1,0 +1,76 @@
+---
+title: "Data cleaning"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Install packages
+
+```{r}
+if(!require(furrr)){install.packages("furrr")}
+```
+
+# Load libraries
+
+```{r}
+library(tidyverse)
+library(here)
+library(furrr)
+```
+# Read data
+
+```{r}
+persons <- read.csv(file = here::here("data","selected.csv"),
+         header = TRUE)
+```
+
+Create unique identifier for combination of identifiers:
+
+```{r}
+# set multisession plan, 6 parallel sessions,
+plan("multisession",workers = 6)
+
+# concat and sort ---------------------------------------------------------
+
+persons %<>%
+  mutate(combo_id = 
+    furrr::future_map2_chr(person1,person2, function(x, y) {
+    paste(
+      sort(c(x, y)),
+      collapse = "|"
+      )
+      }
+    )
+  )
+```
+
+Calculating number of unique combinations:
+
+```{r}
+unique_combo <- 
+  persons %>% 
+    group_by(combo_id) %>% 
+    summarize(records = n())
+```
+
+Separate to recover person ID's
+
+```{r}
+unique_combo %>% 
+  separate(col = "combo_id", 
+           into = c("person_id_1", "person_id_2"),
+           sep = "\\|")
+```
+Write csv:
+
+```{r}
+write.csv(
+  unique_combo,
+  file = here::here("data", "weighted_combinations.csv")
+)
+```
+
+
+
