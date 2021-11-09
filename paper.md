@@ -8,7 +8,7 @@ authors:
   - name: Sofie Meeus
     orcid: 0000-0003-0715-8647
     affiliation: 1
-- name: Lien Reyserhove
+  - name: Lien Reyserhove
     orcid: 0000-0001-7484-9267
     affiliation: 2
   - name: Maarten Trekels
@@ -32,8 +32,6 @@ event: BioHackathon Europe 2021
 
 # Introduction
 Biodiversity data are collected by people, and those people often work in teams. Those teams may be large, particular when they are part of an expedition, though they maybe as small as two people, even a married couple. Data of who works together can help refine biodiversity data in many ways. It can help us cross-reference data to ensure it is consistent and valid. It helps us acknowledge the contribution to science of all of the participants. It helps us understand how scientific collection operates and that can give us insights into the biases and effectiveness of the collection process. Also, the relationships between people, and the organisations they are members of, are interesting from a historic and sociological perspective.
-
-
 
 ## Subsection level 2
 
