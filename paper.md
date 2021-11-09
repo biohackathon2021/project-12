@@ -6,16 +6,16 @@ tags:
   - recording behaviour
 authors:
   - name: Sofie Meeus
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0003-0715-8647
     affiliation: 1
 - name: Lien Reyserhove
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0001-7484-9267
     affiliation: 2
   - name: Maarten Trekels
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0001-8282-8765
     affiliation: 1
   - name: Quentin Groom
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-0596-5376
     affiliation: 1
 
 affiliations:
