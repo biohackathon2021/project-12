@@ -65,5 +65,12 @@ unique_combo %>%
 ```
 Write csv:
 
+```{r}
+write.csv(
+  unique_combo,
+  file = here::here("data", "weighted_combinations.csv")
+)
+```
+
 
 
