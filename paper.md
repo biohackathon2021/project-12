@@ -57,11 +57,9 @@ Remember to introduce figures (see Figure 1) before they appear on the document.
  
 Figure 1. A figure corresponding to the logo of our BioHackrXiv preprint.
 
-# Other main section on your manuscript level 1
+# Methods
 
-Feel free to use numbered lists or bullet points as you need.
-* Item 1
-* Item 2
+Data on collectors waere downloaded from the Bionomia website (2021-11-06). This comma separated file contains three columns (Subject,Predicate,Object), the URI of the GBIF id of the specimen, the identifier of the Darwin Core term (recordedBy or identifiedBy) and the person identifier (ORCID or Wikidata Q number). This file was imported into an SQLite database ([@sqlite2020hipp:2020]).
 
 # Discussion and/or Conclusion
 
