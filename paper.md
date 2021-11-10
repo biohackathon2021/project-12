@@ -33,6 +33,8 @@ event: BioHackathon Europe 2021
 # Introduction
 Biodiversity data are collected by people, and those people often work in teams. Those teams may be large, particular when they are part of an expedition, though they maybe as small as two people, even a married couple. Data of who works together can help refine biodiversity data in many ways. It can help us cross-reference data to ensure it is consistent and valid. It helps us acknowledge the contribution to science of all of the participants. It helps us understand how scientific collection operates and that can give us insights into the biases and effectiveness of the collection process. Also, the relationships between people, and the organisations they are members of, are interesting from a historic and sociological perspective.
 
+[@groom2014herbarium]
+
 ## Subsection level 2
 
 Please keep sections to a maximum of three levels, even better if only two levels.
@@ -57,11 +59,14 @@ Remember to introduce figures (see Figure 1) before they appear on the document.
  
 Figure 1. A figure corresponding to the logo of our BioHackrXiv preprint.
 
-# Other main section on your manuscript level 1
+# Methods
 
-Feel free to use numbered lists or bullet points as you need.
-* Item 1
-* Item 2
+Data on collectors were downloaded from the Bionomia website (2021-11-06). This comma separated file contains three columns (Subject,Predicate,Object), the URI of the GBIF id of the specimen, the identifier of the Darwin Core term (recordedBy or identifiedBy) and the person identifier (ORCID or Wikidata Q number). This file was imported into a table in an SQLite database [@sqlite2020hipp]. All rows referring to identifications of specimens were deleted, leaving only those related to specimen collection. A query was then run using a self-join on specimen ID to create a new table containing two rows with pairs of collectors that collected with each other. This table was then exported and the number of specimens was calculated per collector pair, to create a file of network edges with the pairs of collectors and a weight based on the number of specimens they had in common.
+
+Demographic and gender information on the collectors was retrieved from Wikidata using the notebook 'get_collector_gender.ipynb'. We do not have such data for collectors identified by an ORCID. This created a nodes file containing the ID of the person and columns for the gender and demographic information. 
+
+To visualize the network the nodes and edges file was imported into Gephi [@ICWSM09154].
+
 
 # Discussion and/or Conclusion
 

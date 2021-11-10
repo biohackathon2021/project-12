@@ -1,0 +1,153 @@
+
+# Load libraries
+
+```{r}
+library(tidyverse)
+library(here)
+library(furrr)
+library(magrittr)
+library(janitor)
+library(viridis)
+```
+
+# Read data
+
+```{r}
+input_data <- read.csv(file = here::here("data","export-gender-degree.csv"),
+         header = TRUE)
+```
+
+Clean data
+
+```{r}
+input_data <- input_data %>% clean_names()
+```
+
+# Gender dependency for the occurrence of each degree  
+
+Lump all degrees > 10 in one category
+
+```{r}
+input_data <- 
+  input_data %>% 
+    mutate(degree = as.double(degree)) %>% 
+    mutate(degree_lumped = case_when(
+    degree >= 10 ~ 11,
+    TRUE ~ degree
+))
+```
+
+
+Calculate statistics for female
+
+```{r}
+female <-
+  input_data %>% filter(gender == "female")
+```
+
+Calculate statistics for female:
+
+```{r}
+female_degree <- 
+  female %>% 
+    group_by(degree_lumped) %>% 
+    summarize(absolute = n(),
+              relative_frequency = n()/nrow(female))
+```
+
+Add extra column to indicate gender:
+
+```{r}
+female_degree %<>% mutate(gender = "female")
+```
+
+Calculate statistics for male
+
+```{r}
+male <-
+  input_data %>% filter(gender == "male")
+```
+
+Calculate statistics for male:
+
+```{r}
+male_degree <- 
+  male %>% 
+    group_by(degree_lumped) %>% 
+    summarize(absolute = n(),
+              relative_frequency = n()/nrow(male))
+```
+
+Add extra column to indicate gender:
+
+```{r}
+male_degree %<>% mutate(gender = "male")
+```
+
+Merge `male_degree` and `female_degree`
+
+```{r}
+gender_degree <- bind_rows(male_degree, female_degree)
+```
+
+Make `degree_lumped` a factor
+
+```{r}
+gender_degree %<>% mutate(degree_lumped = as.factor(degree_lumped))
+```
+
+Change `11` to `>10`
+
+```{r}
+gender_degree %<>% 
+  mutate(degree_lumped = recode(degree_lumped,
+    "11" = ">10"))
+```
+
+
+Visualization of absolute numbers:
+
+```{r}
+absolute <- ggplot(data = gender_degree, 
+       aes(x = degree_lumped, y = absolute, fill = gender)) +
+  geom_bar(stat = "identity", position = position_dodge(), colour = "black") +
+  scale_fill_viridis_d() +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        legend.title = element_blank(),
+        legend.position = "none",
+        axis.line = element_line(colour = "black"),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=16)
+        ) +
+  labs(y = "Total number of actors with \n a number of links", 
+       x = "Number of links")
+  
+
+```
+
+
+Visualization of relative numbers:
+
+```{r}
+relative <- ggplot(data = gender_degree, 
+       aes(x = degree_lumped, y = relative_frequency, fill = gender)) +
+  geom_bar(stat = "identity", position = position_dodge(), colour = "black") +
+  scale_fill_viridis_d(name = "Gender") +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=16),
+        legend.position = c(0.8, 0.8)
+        ) +
+  labs(y = "Relative number of actors with \n a number of links", 
+       x = "Number of links") 
+```
+
+```{r}
+cowplot::plot_grid(absolute, relative)
+```
+
