@@ -1,0 +1,67 @@
+
+# Load libraries
+
+```{r}
+library(tidyverse)
+library(here)
+library(furrr)
+library(tidygraph)
+library(ggraph)
+```
+
+# Data processing
+
+## Generate edge and node list
+
+```{r}
+edge_list <- read.csv(file = here::here("data","weighted_combinations.csv"),
+         header = TRUE,
+         row.names = 1) 
+```
+
+Generate node_list
+
+```{r}
+person1 <- edge_list %>%
+  distinct(person_id_1) %>%
+  rename(name = person_id_1)
+
+person2 <- edge_list %>%
+  distinct(person_id_2) %>%
+  rename(name = person_id_2)
+```
+
+```{r}
+node_list <- full_join(person1, person2, by = "name")
+```
+
+
+## Import collector information
+
+
+```{r}
+collector_information <- read.csv(file = here::here("data","collectors_info.csv"),
+         header = FALSE,
+         col.names = c("identifier", "sex", "country", "birth", "death")) 
+```
+
+
+# Network visualisations
+
+
+```{r}
+routes_tidy <- tbl_graph(nodes = node_list, edges = edge_list, directed = TRUE)
+```
+
+```{r}
+p <- ggraph(routes_tidy)
+```
+
+
+```{r}
+ggraph(routes_tidy) + 
+  geom_edge_link() + geom_node_point() + theme_graph()
+
+```
+
+

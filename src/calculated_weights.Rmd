@@ -18,6 +18,7 @@ if(!require(furrr)){install.packages("furrr")}
 library(tidyverse)
 library(here)
 library(furrr)
+library(magrittr)
 ```
 # Read data
 
@@ -58,11 +59,12 @@ unique_combo <-
 Separate to recover person ID's
 
 ```{r}
-unique_combo %>% 
+unique_combo %<>% 
   separate(col = "combo_id", 
            into = c("person_id_1", "person_id_2"),
            sep = "\\|")
 ```
+
 Write csv:
 
 ```{r}
