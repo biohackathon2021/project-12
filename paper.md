@@ -33,6 +33,8 @@ event: BioHackathon Europe 2021
 # Introduction
 Biodiversity data are collected by people, and those people often work in teams. Those teams may be large, particular when they are part of an expedition, though they maybe as small as two people, even a married couple. Data of who works together can help refine biodiversity data in many ways. It can help us cross-reference data to ensure it is consistent and valid. It helps us acknowledge the contribution to science of all of the participants. It helps us understand how scientific collection operates and that can give us insights into the biases and effectiveness of the collection process. Also, the relationships between people, and the organisations they are members of, are interesting from a historic and sociological perspective.
 
+[@groom2014herbarium]
+
 ## Subsection level 2
 
 Please keep sections to a maximum of three levels, even better if only two levels.
@@ -59,7 +61,7 @@ Figure 1. A figure corresponding to the logo of our BioHackrXiv preprint.
 
 # Methods
 
-Data on collectors waere downloaded from the Bionomia website (2021-11-06). This comma separated file contains three columns (Subject,Predicate,Object), the URI of the GBIF id of the specimen, the identifier of the Darwin Core term (recordedBy or identifiedBy) and the person identifier (ORCID or Wikidata Q number). This file was imported into an SQLite database ([@sqlite2020hipp:2020]).
+Data on collectors waere downloaded from the Bionomia website (2021-11-06). This comma separated file contains three columns (Subject,Predicate,Object), the URI of the GBIF id of the specimen, the identifier of the Darwin Core term (recordedBy or identifiedBy) and the person identifier (ORCID or Wikidata Q number). This file was imported into an SQLite database [@sqlite2020hipp:2020].
 
 # Discussion and/or Conclusion
 
