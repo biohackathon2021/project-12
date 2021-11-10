@@ -65,7 +65,7 @@ Data on collectors were downloaded from the Bionomia website (2021-11-06). This 
 
 Demographic and gender information on the collectors was retrieved from Wikidata using the notebook 'get_collector_gender.ipynb'. We do not have such data for collectors identified by an ORCID. This created a nodes file containing the ID of the person and columns for the gender and demographic information. 
 
-To visualize the network the nodes and edges file was imported into Gephi [ICWSM09154].
+To visualize the network the nodes and edges file was imported into Gephi [@ICWSM09154].
 
 
 # Discussion and/or Conclusion
