@@ -61,7 +61,7 @@ Figure 1. A figure corresponding to the logo of our BioHackrXiv preprint.
 
 # Methods
 
-Data on collectors waere downloaded from the Bionomia website (2021-11-06). This comma separated file contains three columns (Subject,Predicate,Object), the URI of the GBIF id of the specimen, the identifier of the Darwin Core term (recordedBy or identifiedBy) and the person identifier (ORCID or Wikidata Q number). This file was imported into an SQLite database [@sqlite2020hipp:2020].
+Data on collectors waere downloaded from the Bionomia website (2021-11-06). This comma separated file contains three columns (Subject,Predicate,Object), the URI of the GBIF id of the specimen, the identifier of the Darwin Core term (recordedBy or identifiedBy) and the person identifier (ORCID or Wikidata Q number). This file was imported into a table in an SQLite database [@sqlite2020hipp]. All rows refering to identifictions of specimens were deleted, leaving only those related to specimen collection. A query was then run using an self-join on specimen ID to create a new table containing two rows with pairs of collectors that collected with each other. This table was then exported and the number of specimens was calculated per collector pair, to create a file of network edges with the pairs of collectors and a weight based on the number of specimens they had in common.
 
 # Discussion and/or Conclusion
 
