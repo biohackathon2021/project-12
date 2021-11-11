@@ -55,9 +55,9 @@ Table 1
 
 Remember to introduce figures (see Figure 1) before they appear on the document. 
 
-![BioHackrXiv logo](./biohackrxiv.png)
+![gender distribution](abs_rel_links.png)
  
-Figure 1. A figure corresponding to the logo of our BioHackrXiv preprint.
+Figure 1. The absolute (left) and relative (right) number of collaborations for women and men who collected specimens identified in Bionomia (https://bionomia.net/).
 
 # Methods
 
