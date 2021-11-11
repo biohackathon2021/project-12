@@ -139,9 +139,12 @@ relative <- ggplot(data = gender_degree,
         panel.grid.minor = element_blank(),
         panel.background = element_blank(), 
         axis.line = element_line(colour = "black"),
-        axis.text=element_text(size=14),
-        axis.title=element_text(size=16),
-        legend.position = c(0.8, 0.8)
+        axis.text = element_text(size=14),
+        axis.title = element_text(size=16),
+        legend.position = c(0.8, 0.8),
+        legend.text = element_text(size=14),
+        legend.title = element_text(size=14)
+
         ) +
   labs(y = "Relative number of actors with \n a number of links", 
        x = "Number of links") 
