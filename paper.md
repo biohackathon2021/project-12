@@ -55,9 +55,6 @@ Table 1
 
 Remember to introduce figures (see Figure 1) before they appear on the document. 
 
-![gender distribution](abs_rel_links.png)
- 
-Figure 1. The absolute (left) and relative (right) number of collaborations for women and men who collected specimens identified in Bionomia (https://bionomia.net/).
 
 # Methods
 
@@ -66,6 +63,14 @@ Data on collectors were downloaded from the Bionomia website (2021-11-06). This 
 Demographic and gender information on the collectors was retrieved from Wikidata using the notebook 'get_collector_gender.ipynb'. We do not have such data for collectors identified by an ORCID. This created a nodes file containing the ID of the person and columns for the gender and demographic information. 
 
 To visualize the network the nodes and edges file was imported into Gephi [@ICWSM09154].
+
+# Results
+
+
+![The absolute (left) and relative (right) number of collaborations for women and men who collected specimens identified in Bionomia (https://bionomia.net/)](/figures/abs_rel_links.png)
+
+![The network of collector collaborations for specimens identified in Bionomia (https://bionomia.net/). This was created in Gephi [@ICWSM09154] and the colours of the nodes is determined by a community detection algorithm and coloured for the largest modules within the network [@blondel2008fast]](/figures/CollectorsNetwork_Degree-final.png)
+
 
 
 # Discussion and/or Conclusion
