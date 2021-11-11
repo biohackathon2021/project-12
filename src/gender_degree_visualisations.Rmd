@@ -151,6 +151,6 @@ relative <- ggplot(data = gender_degree,
 ```
 
 ```{r}
-cowplot::plot_grid(absolute, relative)
+myplot <- cowplot::plot_grid(absolute, relative)
 ```
 
