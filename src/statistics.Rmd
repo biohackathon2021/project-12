@@ -1,0 +1,294 @@
+
+
+# Load libraries
+
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+library(ggpubr)
+library(lme4)
+```
+
+# Read and clean data
+
+## Merge datafiles
+
+```{r}
+edge_file <- read.csv(file = here::here("data","weighted_combinations.csv"),
+         header = TRUE,
+         row.names = 1)
+```
+
+
+```{r}
+node_file <- read.csv(file = here::here("data","export-gender-degree.csv"),
+         header = TRUE)
+```
+
+Clean data
+
+```{r}
+node_file <- node_file %>% clean_names()
+```
+
+Merge dataframes for person 1:
+
+```{r}
+edge_file <-
+  edge_file %>% 
+    left_join(
+      y = select(node_file, id, gender, nationality, date_of_birth, degree),  
+      by = c("person_id_1" = "id"))
+```
+
+
+```{r}
+names(edge_file)
+```
+Rename variables:
+
+```{r}
+edge_file <- 
+  edge_file %>% rename(
+   gender_1 = gender,
+   nationality_1 = nationality,
+   birth_1 = date_of_birth,
+   degree_1 = degree)
+```
+
+
+Merge dataframes for person 2:
+
+```{r}
+edge_file <-
+  edge_file %>% 
+    left_join(
+      y = select(node_file, id, gender, nationality, date_of_birth, degree),  
+      by = c("person_id_2" = "id"))
+```
+
+
+```{r}
+names(edge_file)
+```
+Rename variables:
+
+```{r}
+edge_file <- 
+  edge_file %>% rename(
+   gender_2 = gender,
+   nationality_2 = nationality,
+   birth_2 = date_of_birth,
+   degree_2 = degree)
+```
+
+Rearrange columns:
+
+```{r}
+edge_file <- 
+  edge_file %>% 
+    select(person_id_1, person_id_2,
+           records,
+           degree_1, degree_2,
+           gender_1, gender_2,
+           nationality_1, nationality_2,
+           birth_1, birth_2)
+```
+
+
+
+## Calculate variables
+
+Remove all unknowns:
+
+```{r}
+# Gender
+
+edge_file <- 
+  edge_file %>% 
+    filter(gender_1 != "unknown") %>% 
+    filter(gender_2 != "unknown")
+
+# Nationality
+
+edge_file <- 
+  edge_file %>% 
+    filter(nationality_1 != "unknown") %>% 
+    filter(nationality_2 != "unknown")
+
+# Age difference
+
+edge_file <- 
+  edge_file %>% 
+    filter(birth_1 != "S.D.") %>% 
+    filter(birth_2 != "S.D.")
+
+```
+
+Extract year:
+
+```{r}
+edge_file <- 
+  edge_file %>% 
+    mutate(year_1 = substr(birth_1,1,4)) %>% 
+    mutate(year_2 = substr(birth_2,1,4)) %>% 
+  
+  # From character to numeric
+  
+    mutate(year_1 = as.numeric(year_1)) %>% 
+    mutate(year_2 = as.numeric(year_2)) 
+```
+
+Calculate independent variables:
+
+```{r}
+edge_file <- 
+  edge_file %>% 
+    mutate(gender_diff_01 = case_when(
+      gender_1 == gender_2 ~ "0",
+      gender_1 != gender_2 ~ "1"
+    ))
+```
+
+
+```{r}
+edge_file <- 
+    edge_file %>% 
+    mutate(gender_diff_MV = case_when(
+        gender_1 == "female" & gender_2 == "female" ~ "FF",
+        gender_1 == "male" & gender_2 == "male" ~ "MM",
+        TRUE ~ "MF"
+    ))
+```
+
+
+```{r}
+# edge_file <- 
+#  edge_file %>% 
+#    mutate(nationality_diff = case_when(
+#      nationality_1 == nationality_2 ~ "0",
+#      nationality_1 != nationality_2 ~ "1"
+#    ))
+```
+
+```{r}
+edge_file <- edge_file %>% mutate(age_diff = abs(year_1 - year_2))
+```
+
+Remove all records for which the age difference is > 50 years
+
+```{r}
+edge_file <- 
+  edge_file %>% filter(age_diff <= 50) %>% filter(records < 20000)
+```
+
+Calculate mean time_period:
+
+```{r}
+edge_file <- edge_file %>% mutate(time_period = purrr::map2_dbl(year_1,year_2,~mean(.x,.y)))
+```
+
+
+# Analyses
+
+Generate plot
+
+```{r}
+myplot <- 
+  ggplot(data = edge_file,
+         aes(x = time_period, y = log(records), colour = gender_diff_MV)) +
+    geom_point() +
+    geom_smooth(method = "lm") +
+    scale_color_viridis_d(
+      labels = c("Female-female", "Female-male", "Male-male")) +
+    theme(panel.grid.major = element_blank(), 
+          panel.grid.minor = element_blank(),
+          panel.background = element_blank(), 
+          axis.line = element_line(colour = "black"),
+          axis.text=element_text(size=14),
+          axis.title=element_text(size=16),
+          legend.title = element_blank(),
+          legend.text = element_text(size = 14)
+          ) +
+    labs(y = "Total number specimens collected \n (log scale)", 
+         x = "Time period")
+  
+```
+
+```{r}
+absolute <- ggplot(data = gender_degree, 
+       aes(x = degree_lumped, y = absolute, fill = gender)) +
+  geom_bar(stat = "identity", position = position_dodge(), colour = "black") +
+  scale_fill_viridis_d() +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        legend.title = element_blank(),
+        legend.position = "none",
+        axis.line = element_line(colour = "black"),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=16)
+        ) +
+  labs(y = "Total number of actors with \n a number of links", 
+       x = "Number of links")
+  
+
+```
+
+
+
+```{r}
+absolute <- ggplot(data = gender_degree, 
+       aes(x = degree_lumped, y = absolute, fill = gender)) +
+  geom_bar(stat = "identity", position = position_dodge(), colour = "black") +
+  scale_fill_viridis_d() +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        legend.title = element_blank(),
+        legend.position = "none",
+        axis.line = element_line(colour = "black"),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=16)
+        ) +
+  labs(y = "Total number of actors with \n a number of links", 
+       x = "Number of links")
+  
+
+```
+
+
+Inspect dependent variable:
+
+```{r}
+ggdensity(edge_file$records)
+```
+
+**MODEL 1 (preferred): Generalized mixed model using Inverse gamma distribution:**
+
+```{r}
+glmer(
+  data = edge_file,
+  records ~ time_period * gender_diff_MV +(1|person_id_1),
+  family = Gamma("inverse")) %>% 
+  summary()
+```
+
+**MODEL 2: Linear mixed model using normal distribution of log transformed dependent variable:**
+
+```{r}
+lmer(
+  data = edge_file,
+  log(records) ~ time_period * gender_diff_MV +(1|person_id_1)) %>% 
+  anova()
+```
+**MODEL 3: Generalized linear model using poisson distribution:**
+
+```{r}
+glmer(
+  data = edge_file,
+  records ~ age_diff * gender_diff +(1|person_id_1),
+  family = poisson) %>% 
+  summary()
+```
