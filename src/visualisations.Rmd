@@ -127,7 +127,6 @@ absolute <- ggplot(data = gender_degree,
 
 ```
 
-
 Visualization of relative numbers:
 
 ```{r}
@@ -154,3 +153,43 @@ relative <- ggplot(data = gender_degree,
 myplot <- cowplot::plot_grid(absolute, relative)
 ```
 
+
+# Histogram of age differences
+
+```{r}
+histogram_agediff <- read.csv(file = here::here("data","results_MT_filtered.csv"),
+         header = TRUE)
+```
+
+
+Filter on agediff < 75 and remove unknowns:
+
+```{r}
+histogram_agediff <- 
+  histogram_agediff %>% 
+    filter(agediff < 75) %>% 
+    filter(genderdiff != "unknown")
+```
+
+Visualization:
+
+```{r}
+myplot <- 
+ggplot(data = histogram_agediff, 
+       aes(x = agediff, fill = genderdiff)) +
+  geom_histogram(position = "identity", bins = 200, alpha = 0.5) +
+  scale_fill_viridis_d(
+        name = "Gender",
+        breaks = c("f-f", "mixed", "m-m"),
+        labels = c("Female-female", "Female-male", "Male-male")) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        axis.line = element_line(colour = "black"),
+        axis.text = element_text(size=14),
+        axis.title = element_text(size=16),
+        legend.text = element_text(size=14),
+        legend.title = element_text(size=14)) +
+  labs(y = "Number of collector pairs", 
+       x = "Age difference (years)") 
+```
