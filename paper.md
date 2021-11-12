@@ -8,7 +8,7 @@ authors:
   - name: Sofie Meeus
     orcid: 0000-0003-0715-8647
     affiliation: 1
-   - name: Tom August
+  - name: Tom August
     orcid: 0000-0003-1116-3385
     affiliation: 2
   - name: Lien Reyserhove
@@ -24,7 +24,7 @@ authors:
 affiliations:
  - name: Meise Botanic Garden, Nieuwelaan 38, 1860 Meise, Belgium
    index: 1
- - UK Centre of Ecology and Hydrology, Maclean Building, Crowmarsh Gifford, Wallingford OX10 8BB, UK
+ - name: UK Centre of Ecology and Hydrology, Maclean Building, Crowmarsh Gifford, Wallingford OX10 8BB, UK
    index: 2
  - name: Instituut voor Natuur- en Bosonderzoek, Team Oscibio, Havenlaan 88, 1000 Brussel
    index: 3
@@ -38,23 +38,11 @@ event: BioHackathon Europe 2021
 # Introduction
 Biodiversity data are collected by people, and those people often work in teams. Those teams may be large, particular when they are part of an expedition, though they maybe as small as two people. Data of who works together can help refine biodiversity data in many ways. It can help us cross-reference data to ensure it is consistent and valid. It helps us acknowledge the contribution to science of all of the participants. It helps us understand how scientific collection, learning and communication operates and this can give us insights into the biases and effectiveness of the collection process. Also, the relationships between people, and the organisations they are members of, are interesting from a historic and sociological perspective.
 
-Network analysis has been used for some time to explore the relationships between people, but the connection between the people maybe strong as in the case of citation networks (ref), or weak in the case of Twitter analytics. Here we specifically analyse the co-collection of biological specimens by people. That requires that those people involved in the collection process probably travelled, organised and explore together. One could argue that such a connection could be a stronger one than co-authoring a publication, though doubtlessly the degree of engagement varies considerable. Networks based upon co-collection have been creating before for specific groups, for example for botanical exchange clubs in the United Kingdom [@groom2014herbarium] and for a specific herbarium [@de2020new]. However, in this paper we approach the co-collection networks from a global perspective using the data from [Bionomia](https://bionomia.net/). Bionomia is a community based project that allows users to associate stable identifiers for people, such as [ORCID](https://orcid.org/) and [Wikidata Q numbers](https://www.wikidata.org/wiki/Q43649390), to the anonymous text strings transcribed from specimens in museum and herbaria.
+Network analysis has been used for some time to explore the relationships between people, but the connections analysed maybe strong, as in the case of citation networks (ref), or weak in the case of Twitter analytics. Here we specifically analyse the co-collection of biological specimens by people. Co-collecting a specimen requires that those people involved in the collection process travel, organise and explore together. One could argue that such a connection could be stronger than co-authoring a publication together, though doubtlessly the degree of engagement varies considerable. Networks based upon co-collection have been creating before for specific groups, for example for the botanical exchange clubs in the United Kingdom [@groom2014herbarium] and for a specific herbarium [@de2020new]. However, in this paper we approach the co-collection networks from a global perspective using the data from [Bionomia](https://bionomia.net/). Bionomia is a community based project that allows users to associate stable identifiers for people, such as [ORCID](https://orcid.org/) and [Wikidata Q numbers](https://www.wikidata.org/wiki/Q43649390), to the anonymous text strings transcribed from specimens in museum and herbaria.
 
 ## Subsection level 2
 
 Please keep sections to a maximum of three levels, even better if only two levels.
-
-### Subsection level 3
-
-Please keep sections to a maximum of three levels.
-
-## Tables, figures and so on
-
-Please remember to introduce tables (see Table 1) before they appear on the document. We recommend to center tables, formulas and figure but not the corresponding captions. Feel free to modify the table style as it better suits to your data.
-
-
-
-Remember to introduce figures (see Figure 1) before they appear on the document. 
 
 
 # Methods
