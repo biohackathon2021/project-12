@@ -47,11 +47,7 @@ Please keep sections to a maximum of three levels.
 
 Please remember to introduce tables (see Table 1) before they appear on the document. We recommend to center tables, formulas and figure but not the corresponding captions. Feel free to modify the table style as it better suits to your data.
 
-Table 1
-| Header 1 | Header 2 |
-| -------- | -------- |
-| item 1 | item 2 |
-| item 3 | item 4 |
+
 
 Remember to introduce figures (see Figure 1) before they appear on the document. 
 
@@ -68,6 +64,15 @@ To visualize the network the nodes and edges file was imported into Gephi [@ICWS
 
 # Results
 
+Table 1
+| Name | Wikidata Q-number | Wikipedia link |
+| -------- | -------- | -------- |
+| Elizabeth Gertrude Britton | [Q2567402](https://www.wikidata.org/wiki/Q2567402) | https://en.wikipedia.org/wiki/Elizabeth_Gertrude_Britton |
+| Johannes Lid | [Q94522](https://www.wikidata.org/wiki/Q94522) | https://en.wikipedia.org/wiki/Johannes_Lid |
+| Merritt Lyndon Fernald | [Q2656885](https://www.wikidata.org/wiki/Q2656885) | https://en.wikipedia.org/wiki/Merritt_Lyndon_Fernald |
+| Alicia Lourteig | [Q454806](https://www.wikidata.org/wiki/Q454806) | https://en.wikipedia.org/wiki/Alicia_Lourteig |
+| Elisa G. Nicora | [Q5829538](https://www.wikidata.org/wiki/Q5829538) | https://en.wikipedia.org/wiki/Elisa_G._Nicora |
+| William Alfred Weber | [Q4105706](https://www.wikidata.org/wiki/Q4105706) | https://en.wikipedia.org/wiki/William_Alfred_Weber |
 
 ![The absolute (left) and relative (right) number of collaborations for women and men who collected specimens identified in Bionomia (https://bionomia.net/)](./figures/abs_rel_links.png)
 
@@ -83,7 +88,9 @@ The number of specimens collected shows a clear increase during the course of ti
 
 # Discussion and/or Conclusion
 
-We recommend to include some discussion or conclusion about your work. Feel free to modify the section title as it fits better to your manuscript.
+![An infographic illustrating Alicia Lourteig and her place in the collecting network together with a biographical vignette.](./figures/Alicia_Lourteig.png)
+![An infographic illustrating Hanna Resvoll-Holmsen and her place in the collecting network together with a biographical vignette.](./figures/Hanna Resvoll-Holmsen.png)
+![An infographic illustrating Mary Agnes Chase and her place in the collecting network together with a biographical vignette.](./figures/Mary Agnes Chase.png)
 
 # Future work
 
