@@ -63,6 +63,7 @@ Using the nedwork edges and the nodes list, the Jupyter notebook 'age_difference
 To visualize the network the nodes and edges file was imported into Gephi [@ICWSM09154].
 
 # Results
+: The top three men and women with the largest number of co-collectors
 
 Table 1
 | Name | Wikidata Q-number | Wikipedia link |
@@ -71,6 +72,7 @@ Table 1
 | Merritt Lyndon Fernald | [Q2656885](https://www.wikidata.org/wiki/Q2656885) | https://en.wikipedia.org/wiki/Merritt_Lyndon_Fernald |
 | Johannes Lid | [Q94522](https://www.wikidata.org/wiki/Q94522) | https://en.wikipedia.org/wiki/Johannes_Lid |
 | Alicia Lourteig | [Q454806](https://www.wikidata.org/wiki/Q454806) | https://en.wikipedia.org/wiki/Alicia_Lourteig |
+
 | Elisa G. Nicora | [Q5829538](https://www.wikidata.org/wiki/Q5829538) | https://en.wikipedia.org/wiki/Elisa_G._Nicora |
 | William Alfred Weber | [Q4105706](https://www.wikidata.org/wiki/Q4105706) | https://en.wikipedia.org/wiki/William_Alfred_Weber |
 
