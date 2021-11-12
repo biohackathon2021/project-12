@@ -8,9 +8,12 @@ authors:
   - name: Sofie Meeus
     orcid: 0000-0003-0715-8647
     affiliation: 1
+   - name: Tom August
+    orcid: 0000-0003-1116-3385
+    affiliation: 2
   - name: Lien Reyserhove
     orcid: 0000-0001-7484-9267
-    affiliation: 2
+    affiliation: 3
   - name: Maarten Trekels
     orcid: 0000-0001-8282-8765
     affiliation: 1
@@ -21,8 +24,10 @@ authors:
 affiliations:
  - name: Meise Botanic Garden, Nieuwelaan 38, 1860 Meise, Belgium
    index: 1
- - name: Instituut voor Natuur- en Bosonderzoek, Team Oscibio, Havenlaan 88, 1000 Brussel
+ - UK Centre of Ecology and Hydrology, Maclean Building, Crowmarsh Gifford, Wallingford OX10 8BB, UK
    index: 2
+ - name: Instituut voor Natuur- en Bosonderzoek, Team Oscibio, Havenlaan 88, 1000 Brussel
+   index: 3
 date: 09 November 2021
 bibliography: paper.bib
 authors_short: Last et al. (2021) BioHackrXiv  template
@@ -63,7 +68,7 @@ Using the nedwork edges and the nodes list, the Jupyter notebook 'age_difference
 To visualize the network the nodes and edges file was imported into Gephi [@ICWSM09154].
 
 # Results
-Table 1: The top three men and women with the largest number of co-collector
+Table 1: The top three men and women with the largest number of co-collectors, ordered alphabetically by their surnames
 
 
 |Wikipedia|Wikidata|
