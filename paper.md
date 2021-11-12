@@ -63,23 +63,15 @@ Using the nedwork edges and the nodes list, the Jupyter notebook 'age_difference
 To visualize the network the nodes and edges file was imported into Gephi [@ICWSM09154].
 
 # Results
-: The top three men and women with the largest number of co-collectors
-
-Table 1
-| Header 1 | Header 2 |
-| -------- | -------- |
-| item 1 | item 2 |
-| item 3 | item 4 |
-
-
-||||
+Table 1: The top three men and women with the largest number of co-collector
+|Name|Wikidata Q-number|Wikipedia link|
 |---|---|---|
 |`*br)*` || `*br-*`|
 |`*br:*` || `*meise*`|
 |`*br<*` || `*gard.*belg*`|
 
-Table 1
-|Name |Wikidata Q-number|Wikipedia link |
+
+
 |-------- |-------- |-------- |
 |Elizabeth Gertrude Britton |Q2567402 |Elizabeth_Gertrude_Britton |
 
