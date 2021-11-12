@@ -69,14 +69,11 @@ Table 1: The top three men and women with the largest number of co-collector
 |Wikipedia|Wikidata|
 |---|---|
 |[Elizabeth Gertrude Britton](https://en.wikipedia.org/wiki/Elizabeth_Gertrude_Britton)|[Q2567402](https://www.wikidata.org/wiki/Q2567402)|
-
-
-|Elizabeth Gertrude Britton|[Q2567402](https://www.wikidata.org/wiki/Q2567402)|https://en.wikipedia.org/wiki/Elizabeth_Gertrude_Britton|
-| Merritt Lyndon Fernald | [Q2656885](https://www.wikidata.org/wiki/Q2656885) | https://en.wikipedia.org/wiki/Merritt_Lyndon_Fernald |
-| Johannes Lid | [Q94522](https://www.wikidata.org/wiki/Q94522) | https://en.wikipedia.org/wiki/Johannes_Lid |
-| Alicia Lourteig | [Q454806](https://www.wikidata.org/wiki/Q454806) | https://en.wikipedia.org/wiki/Alicia_Lourteig |
-| Elisa G. Nicora | [Q5829538](https://www.wikidata.org/wiki/Q5829538) | https://en.wikipedia.org/wiki/Elisa_G._Nicora |
-| William Alfred Weber | [Q4105706](https://www.wikidata.org/wiki/Q4105706) | https://en.wikipedia.org/wiki/William_Alfred_Weber |
+|[Merritt Lyndon Fernald](https://en.wikipedia.org/wiki/Merritt_Lyndon_Fernald)|[Q2656885](https://www.wikidata.org/wiki/Q2656885)|
+|[Johannes Lid](https://en.wikipedia.org/wiki/Johannes_Lid)|[Q94522](https://www.wikidata.org/wiki/Q94522)|
+|[Alicia Lourteig](https://en.wikipedia.org/wiki/Alicia_Lourteig)|[Q454806](https://www.wikidata.org/wiki/Q454806)|
+|[Elisa G. Nicora](https://en.wikipedia.org/wiki/Elisa_G._Nicora)|[Q5829538](https://www.wikidata.org/wiki/Q5829538)|
+|[William Alfred Weber](https://en.wikipedia.org/wiki/William_Alfred_Weber)|[Q4105706](https://www.wikidata.org/wiki/Q4105706)|
 
 ![The absolute (left) and relative (right) number of collaborations for women and men who collected specimens identified in Bionomia (https://bionomia.net/)](./figures/abs_rel_links.png)
 
