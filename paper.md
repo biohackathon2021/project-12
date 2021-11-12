@@ -66,9 +66,9 @@ To visualize the network the nodes and edges file was imported into Gephi [@ICWS
 Table 1: The top three men and women with the largest number of co-collector
 
 
-|Name|Wikidata|Wikipedia|
-|---|---|---|
-|Elizabeth Gertrude Britton|[Q2567402](https://www.wikidata.org/wiki/Q2567402)|[https://en.wikipedia.org/wiki/Elizabeth_Gertrude_Britton](https://en.wikipedia.org/wiki/Elizabeth_Gertrude_Britton)|
+|Wikipedia|Wikidata|
+|---|---|
+|[Elizabeth Gertrude Britton](https://en.wikipedia.org/wiki/Elizabeth_Gertrude_Britton)|[Q2567402](https://www.wikidata.org/wiki/Q2567402)|
 
 
 |Elizabeth Gertrude Britton|[Q2567402](https://www.wikidata.org/wiki/Q2567402)|https://en.wikipedia.org/wiki/Elizabeth_Gertrude_Britton|
