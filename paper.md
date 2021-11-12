@@ -71,6 +71,13 @@ Table 1
 | item 1 | item 2 |
 | item 3 | item 4 |
 
+
+||||
+|---|---|---|
+|`*br)*` || `*br-*`|
+|`*br:*` || `*meise*`|
+|`*br<*` || `*gard.*belg*`|
+
 Table 1
 |Name |Wikidata Q-number|Wikipedia link |
 |-------- |-------- |-------- |
