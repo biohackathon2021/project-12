@@ -64,12 +64,12 @@ To visualize the network the nodes and edges file was imported into Gephi [@ICWS
 
 # Results
 
-Table 1
+Table 1: The top three men and women with the largest number of co-collectors
 | Name | Wikidata Q-number | Wikipedia link |
 | -------- | -------- | -------- |
 | Elizabeth Gertrude Britton | [Q2567402](https://www.wikidata.org/wiki/Q2567402) | https://en.wikipedia.org/wiki/Elizabeth_Gertrude_Britton |
-| Johannes Lid | [Q94522](https://www.wikidata.org/wiki/Q94522) | https://en.wikipedia.org/wiki/Johannes_Lid |
 | Merritt Lyndon Fernald | [Q2656885](https://www.wikidata.org/wiki/Q2656885) | https://en.wikipedia.org/wiki/Merritt_Lyndon_Fernald |
+| Johannes Lid | [Q94522](https://www.wikidata.org/wiki/Q94522) | https://en.wikipedia.org/wiki/Johannes_Lid |
 | Alicia Lourteig | [Q454806](https://www.wikidata.org/wiki/Q454806) | https://en.wikipedia.org/wiki/Alicia_Lourteig |
 | Elisa G. Nicora | [Q5829538](https://www.wikidata.org/wiki/Q5829538) | https://en.wikipedia.org/wiki/Elisa_G._Nicora |
 | William Alfred Weber | [Q4105706](https://www.wikidata.org/wiki/Q4105706) | https://en.wikipedia.org/wiki/William_Alfred_Weber |
