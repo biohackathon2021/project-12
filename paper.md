@@ -72,9 +72,10 @@ Table 1
 | item 3 | item 4 |
 
 Table 1
-| Name | Wikidata Q-number | Wikipedia link |
-| -------- | -------- | -------- |
-| Elizabeth Gertrude Britton | Q2567402 | Elizabeth_Gertrude_Britton |
+|Name |Wikidata Q-number|Wikipedia link |
+|-------- |-------- |-------- |
+|Elizabeth Gertrude Britton |Q2567402 |Elizabeth_Gertrude_Britton |
+
 | Elizabeth Gertrude Britton | [Q2567402](https://www.wikidata.org/wiki/Q2567402) | https://en.wikipedia.org/wiki/Elizabeth_Gertrude_Britton |
 | Merritt Lyndon Fernald | [Q2656885](https://www.wikidata.org/wiki/Q2656885) | https://en.wikipedia.org/wiki/Merritt_Lyndon_Fernald |
 | Johannes Lid | [Q94522](https://www.wikidata.org/wiki/Q94522) | https://en.wikipedia.org/wiki/Johannes_Lid |
