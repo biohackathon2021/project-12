@@ -89,8 +89,8 @@ The number of specimens collected shows a clear increase during the course of ti
 # Discussion and/or Conclusion
 
 ![An infographic illustrating Alicia Lourteig and her place in the collecting network together with a biographical vignette.](./figures/Alicia_Lourteig.png)
-![An infographic illustrating Hanna Resvoll-Holmsen and her place in the collecting network together with a biographical vignette.](./figures/Hanna Resvoll-Holmsen.png)
-![An infographic illustrating Mary Agnes Chase and her place in the collecting network together with a biographical vignette.](./figures/Mary Agnes Chase.png)
+![An infographic illustrating Hanna Resvoll-Holmsen and her place in the collecting network together with a biographical vignette.](./figures/Hanna_Resvoll_Holmsen.png)
+![An infographic illustrating Mary Agnes Chase and her place in the collecting network together with a biographical vignette.](./figures/Mary_Agnes_Chase.png)
 
 # Future work
 
