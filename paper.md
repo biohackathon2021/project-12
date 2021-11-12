@@ -75,6 +75,12 @@ To visualize the network the nodes and edges file was imported into Gephi [@ICWS
 
 ![Histogram of the age difference between peeple. The results are shown for each of the different gender combinations that could be derived from the data](./figures/histogram_agediff.png)
 
+After analysis through the age differences notebook, a histogram of the age differences could be constructed for the different gender combinations (figure XX). The distribution of age differences suggests that the cut-off of realistic differences in ages is around 50 years. Also intuitively it seems reasonable to assume that it is worthwhile checking the records that show a bigger differnce in age. The fraction of edges that should be investigated further is around 5.5%. This is a significant number of records that could be fed back to Bionomia to be checked and/or corrected by the community.
+
+![Number of specimems collected as a function of birth date of one of the people. The colors are indicating the combination of genders](./figures/period_gender_specimens.png)
+
+The number of specimens collected shows a clear increase during the course of time. The beginning of the records shows a pure male-male gender combination in the collection of the specimens. In the late 18th century the first specimens were collected by mixed gender teams and it takes until the beginning of the 19th century that female only collecting teams are showing up in the data. In the 20th century, the pure male collecting teams are dropped below 70% and still decreasing.
+
 # Discussion and/or Conclusion
 
 We recommend to include some discussion or conclusion about your work. Feel free to modify the section title as it fits better to your manuscript.
