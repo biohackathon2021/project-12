@@ -64,7 +64,9 @@ To visualize the network the nodes and edges file was imported into Gephi [@ICWS
 
 # Results
 Table 1: The top three men and women with the largest number of co-collector
-|Name|Wikidata Q-number|Wikipedia link|
+
+
+|Name|Wikidata|Wikipedia|
 |---|---|---|
 |`*br)*` || `*br-*`|
 |`*br:*` || `*meise*`|
