@@ -47,17 +47,24 @@ Please keep sections to a maximum of three levels, even better if only two level
 
 # Methods
 
+## Data sources
 Data on collectors were downloaded from the Bionomia website (2021-11-06). This comma separated file contains three columns (Subject,Predicate,Object), the URI of the GBIF id of the specimen, the identifier of the Darwin Core term (recordedBy or identifiedBy) and the person identifier (ORCID or Wikidata Q number). This file was imported into a table in an SQLite database [@sqlite2020hipp]. All rows referring to identifications of specimens were deleted, leaving only those related to specimen collection. A query was then run using a self-join on specimen ID to create a new table containing two rows with pairs of collectors that collected with each other. This table was then exported and the number of specimens was calculated per collector pair, to create a file of network edges with the pairs of collectors and a weight based on the number of specimens they had in common.
 
 Demographic and gender information on the collectors was retrieved from Wikidata using the notebook 'get_collector_gender.ipynb'. Using the SPARQL endpoint of wikidata, the script is collecting the relevant information if it is available. ORCiD ids are not containing gender or demographic information tat can be queried. Therefor we can only retrieve the information if those people are represented in wikidata and their ORCiD is present in the Wikidata entry. The output of the script creates a nodes file containing the ID of the person and columns for the gender and demographic information.
 
-Using the nedwork edges and the nodes list, the Jupyter notebook 'age_differences.ipynb' starts with filtering out the unique interactions between people. Using the demographic information, it was possible to derive the age differences between the interacting people. This can serve as a metric to filter out wrong connections between people. As such it is possible to detect wrong assignments of people to specimens and can help in cleaning the data. Since in many cases gender could be retrieved from the identifiers, it also enabled the analysis of gender as parameter in the network of people.
+Using the network edges and the nodes list, the Jupyter notebook 'age_differences.ipynb' starts with filtering out the unique interactions between people. Using the demographic information, it was possible to derive the age differences between the interacting people. This can serve as a metric to filter out wrong connections between people. As such it is possible to detect wrong assignments of people to specimens and can help in cleaning the data. Since in many cases gender could be retrieved from the identifiers, it also enabled the analysis of gender as parameter in the network of people.
 
-To visualize the network the nodes and edges file was imported into Gephi [@ICWSM09154].
+## Collector network visualization
+To visualize the network the nodes and edges file was imported into Gephi [@ICWSM09154] as an undirected network with weighted edges. The network was laid out using the Yifan Hu algorithm [@hu2011algorithms]. The weight of the edges was equal to the number of specimens a collector pair collected together (not shown in Fig. 1).
 
 # Results
-Table 1: The top three men and women with the largest number of co-collectors, ordered alphabetically by their surnames
 
+## The network of collectors
+The network contains 3009 nodes and 4330 edges (Fig. 1). The average degree is 2.88. The average modularity of the network [@Blondel2008] is 0.84. The analysis identified 327 communities. The top five of largest clusters with their characteristics is shown in Table 1. The total diameter of the largest network is 22 and the average path length 6.99 [@Brandes2001].
+
+![Figure 1: The network of collector collaborations for specimens identified in Bionomia (https://bionomia.net/). This was created in Gephi [@ICWSM09154]. The size of the nodes is determined by the degree and the colours of the nodes is determined by a community detection algorithm and coloured for the largest modules within the network [@blondel2008fast]](./figures/CollectorsNetwork_Degree-final.png)
+
+Table 1: The top three men and women with the largest number of co-collectors, ordered alphabetically by their surnames
 
 |Wikipedia|Wikidata|
 |---|---|
@@ -70,7 +77,6 @@ Table 1: The top three men and women with the largest number of co-collectors, o
 
 ![The absolute (left) and relative (right) number of collaborations for women and men who collected specimens identified in Bionomia (https://bionomia.net/)](./figures/abs_rel_links.png)
 
-![The network of collector collaborations for specimens identified in Bionomia (https://bionomia.net/). This was created in Gephi [@ICWSM09154] and the colours of the nodes is determined by a community detection algorithm and coloured for the largest modules within the network [@blondel2008fast]](./figures/CollectorsNetwork_Degree-final.png)
 
 ![Histogram of the age difference between peeple. The results are shown for each of the different gender combinations that could be derived from the data](./figures/histogram_agediff.png)
 
