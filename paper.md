@@ -54,16 +54,18 @@ Demographic and gender information on the collectors was retrieved from Wikidata
 Using the network edges and the nodes list, the Jupyter notebook 'age_differences.ipynb' starts with filtering out the unique interactions between people. Using the demographic information, it was possible to derive the age differences between the interacting people. This can serve as a metric to filter out wrong connections between people. As such it is possible to detect wrong assignments of people to specimens and can help in cleaning the data. Since in many cases gender could be retrieved from the identifiers, it also enabled the analysis of gender as parameter in the network of people.
 
 ## Collector network visualization
-To visualize the network the nodes and edges file was imported into Gephi [@ICWSM09154] as an undirected network with weighted edges. The network was laid out using the Yifan Hu algorithm [@hu2011algorithms]. The weight of the edges was equal to the number of specimens a collector pair collected together (not shown in Fig. 1).
+To visualize the network the nodes and edges file was imported into Gephi [@ICWSM09154] as an undirected network with weighted edges. The network was laid out using the Yifan Hu algorithm [@hu2011algorithms]. The weight of the edges was equal to the number of specimens a collector pair collected together (not shown in Fig. 1). 
 
 # Results
 
 ## The network of collectors
-The network contains 3009 nodes and 4330 edges (Fig. 1). The average degree is 2.88. The average modularity of the network [@Blondel2008] is 0.84. The analysis identified 327 communities. The top five of largest clusters with their characteristics is shown in Table 1. The total diameter of the largest network is 22 and the average path length 6.99 [@Brandes2001].
+The network contains 3009 nodes and 4330 edges (Fig. 1). The average degree is 2.88. The average modularity of the network [@Blondel2008] is 0.84. The analysis identified 327 communities. The top five of largest clusters with their characteristics is shown in Table 1. The total diameter of the largest network is 22 and the average path length 6.99 [@Brandes2001]. The data gathered from Wikidata also includes the gender of the person, therefore we are able to analyse the network for gender differences in co-collecting. This has been visulized in figure 2.
 
 ![The network of collector collaborations for specimens identified in Bionomia (https://bionomia.net/). This was created in Gephi [@ICWSM09154]. The size of the nodes is determined by the degree of the node (i.e. number of people they collected with) and the colours of the nodes is determined by a community detection algorithm and coloured for the largest modules within the network [@blondel2008fast]](./figures/CollectorsNetwork_Degree-final.png)
 
 ![Gender of collectors visualized in the collector network with node size proportional to the weighted degree (i.e. number of people they collected with). Colours: orange=women, blue=men, grey=unknown](./figures/NetworkCollectors-gender-infographic_Resvoll-Holmsen.png)
+
+Most people collaborate with only with one person, but there are some super-co-collectors who collaborate with many people. The top three men and women with the highest number of collectors is listed in table 1. However, men tend to have many more co-collectors than women (Fig. 3).
 
 Table 1: The top three men and women with the largest number of co-collectors, ordered alphabetically by their surnames
 
@@ -78,14 +80,13 @@ Table 1: The top three men and women with the largest number of co-collectors, o
 
 ![The absolute (left) and relative (right) number of collaborations for women and men who collected specimens identified in Bionomia (https://bionomia.net/)](./figures/abs_rel_links.png)
 
+After analysis through the age differences notebook, a histogram of the age differences could be constructed for the different gender combinations (Fig.4). The distribution of age differences suggests that the cut-off of realistic differences in ages is around 50 years. Also intuitively it seems reasonable to assume that it is worthwhile checking the records that show a bigger differnce in age. The fraction of edges that should be investigated further is around 5.5%. This is a significant number of records that could be fedback to Bionomia to be checked and corrected by the community.
 
 ![Histogram of the age difference between peeple. The results are shown for each of the different gender combinations that could be derived from the data](./figures/histogram_agediff.png)
 
-After analysis through the age differences notebook, a histogram of the age differences could be constructed for the different gender combinations (figure XX). The distribution of age differences suggests that the cut-off of realistic differences in ages is around 50 years. Also intuitively it seems reasonable to assume that it is worthwhile checking the records that show a bigger differnce in age. The fraction of edges that should be investigated further is around 5.5%. This is a significant number of records that could be fed back to Bionomia to be checked and/or corrected by the community.
+The number of specimens collected shows a clear increase during the course of time. The beginning of the records shows a pure male-male gender combination in the collection of the specimens. In the late 18th century the first specimens were collected by mixed gender teams and it takes until the beginning of the 19th century that female only collecting teams are showing up in the data. In the 20th century, the pure male collecting teams are dropped below 70% and still decreasing.
 
 ![Number of specimems collected as a function of birth date of one of the people. The colors are indicating the combination of genders](./figures/period_gender_specimens.png)
-
-The number of specimens collected shows a clear increase during the course of time. The beginning of the records shows a pure male-male gender combination in the collection of the specimens. In the late 18th century the first specimens were collected by mixed gender teams and it takes until the beginning of the 19th century that female only collecting teams are showing up in the data. In the 20th century, the pure male collecting teams are dropped below 70% and still decreasing.
 
 # Discussion and/or Conclusion
 Given that there are around 2 billion specimens in natural history collections worldwide [@arino2010approaches], and only a small propoortion of those have been full digitized and linked to identifiers for their collectors 
