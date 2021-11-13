@@ -81,6 +81,8 @@ After analysis through the age differences notebook, a histogram of the age diff
 The number of specimens collected shows a clear increase during the course of time. The beginning of the records shows a pure male-male gender combination in the collection of the specimens. In the late 18th century the first specimens were collected by mixed gender teams and it takes until the beginning of the 19th century that female only collecting teams are showing up in the data. In the 20th century, the pure male collecting teams are dropped below 70% and still decreasing.
 
 # Discussion and/or Conclusion
+Given that there are around 2 billion specimens in natural history collections worldwide [@arino2010approaches], and only a small propoortion of those have been full digitized and linked to identifiers for their collectors 
+
 
 ![An infographic illustrating Alicia Lourteig and her place in the collecting network together with a biographical vignette.](./figures/Alicia_Lourteig.png)
 ![An infographic illustrating Hanna Resvoll-Holmsen and her place in the collecting network together with a biographical vignette.](./figures/Hanna_Resvoll_Holmsen.png)
@@ -88,21 +90,15 @@ The number of specimens collected shows a clear increase during the course of ti
 
 # Future work
 
-And maybe you want to add a sentence or two on how you plan to continue. Please keep reading to learn about citations and references.
+As more data becomes available there is considerable scope for repeating this project in the future. We do not anticipate the general trends to change, but we will be able to study the network, and its various subnetworks in much more detail. It may also be valuable to compare these collection networks with citation and co-authorship networks.
+Networks, such as these, will help us understand the provenance of collections, and the biases they contain, thus improving the overall metadata of collections. It would also be useful to collaborate with historians and social scientists to get a different perspective on what these networks tell us about people.
 
-For citations of references, we prefer the use of parenthesis, last name and year. If you use a citation manager, Elsevier – Harvard or American Psychological Association (APA) will work. If you are referencing web pages, software or so, please do so in the same way. Whenever possible, add authors and year. We have included a couple of citations along this document for you to get the idea. Please remember to always add DOI whenever available, if not possible, please provide alternative URLs. You will end up with an alphabetical order list by authors’ last name.
 
 # Jupyter notebooks, GitHub repositories and data repositories
 
-* Please add a list here
-* Make sure you let us know which of these correspond to Jupyter notebooks. Although not supported yet, we plan to add features for them
-* And remember, software and data need a license for them to be used by others, no license means no clear rules so nobody could legally use a non-licensed research object, whatever that object is
 
 # Acknowledgements
-The authors thank the organizers BioHackathon-Europe for their support and the smoothrunning of the event. This work was also facilitated by the Research Foundation – Flanders research infrastructure under grant number FWO I001721N and the BiCIKL project of the European Union's Horizon 2020 Research and Innovation action under grant agreement No 101007492.
-
+The authors thank the organizers BioHackathon-Europe for their support and excellent organisation. This work was also facilitated by the Research Foundation – Flanders research infrastructure under grant number FWO I001721N and the BiCIKL project of the European Union's Horizon 2020 Research and Innovation action under grant agreement No 101007492.
 
 
 # References
-
-Leave thise section blank, create a paper.bib with all your references.
