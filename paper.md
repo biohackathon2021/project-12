@@ -91,6 +91,7 @@ Tweet: French–Argentinian botanist Alicia Lourteig has about 20 plant taxa nam
 
 ![An infographic illustrating Hanna Resvoll-Holmsen and her place in the collecting network together with a biographical vignette.](./figures/Hanna_Resvoll_Holmsen.png)
 Tweet: Mary Chase was the first woman elected to the presidency of the Botanical Society of America. She was also a committed suffragist, and was always supporting women in their scientific studies. 
+
 ![An infographic illustrating Mary Agnes Chase and her place in the collecting network together with a biographical vignette.](./figures/Mary_Agnes_Chase.png)
 Tweet: Hanna Resvoll-Holmsen was a pioneer conservationist and ecologist, advocating for the preservation of natural ecosystems in her paper Om betydningen av det uensartede i våre skoger
 
