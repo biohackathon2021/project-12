@@ -44,7 +44,6 @@ Network analysis has been used for some time to explore the relationships betwee
 
 Please keep sections to a maximum of three levels, even better if only two levels.
 
-
 # Methods
 
 ## Data sources
@@ -62,7 +61,7 @@ To visualize the network the nodes and edges file was imported into Gephi [@ICWS
 ## The network of collectors
 The network contains 3009 nodes and 4330 edges (Fig. 1). The average degree is 2.88. The average modularity of the network [@Blondel2008] is 0.84. The analysis identified 327 communities. The top five of largest clusters with their characteristics is shown in Table 1. The total diameter of the largest network is 22 and the average path length 6.99 [@Brandes2001].
 
-![Figure 1: The network of collector collaborations for specimens identified in Bionomia (https://bionomia.net/). This was created in Gephi [@ICWSM09154]. The size of the nodes is determined by the degree and the colours of the nodes is determined by a community detection algorithm and coloured for the largest modules within the network [@blondel2008fast]](./figures/CollectorsNetwork_Degree-final.png)
+![The network of collector collaborations for specimens identified in Bionomia (https://bionomia.net/). This was created in Gephi [@ICWSM09154]. The size of the nodes is determined by the degree and the colours of the nodes is determined by a community detection algorithm and coloured for the largest modules within the network [@blondel2008fast]](./figures/CollectorsNetwork_Degree-final.png)
 
 Table 1: The top three men and women with the largest number of co-collectors, ordered alphabetically by their surnames
 
