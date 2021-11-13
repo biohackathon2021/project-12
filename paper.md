@@ -83,10 +83,18 @@ The number of specimens collected shows a clear increase during the course of ti
 # Discussion and/or Conclusion
 Given that there are around 2 billion specimens in natural history collections worldwide [@arino2010approaches], and only a small propoortion of those have been full digitized and linked to identifiers for their collectors 
 
+## Communication and outreach
+Given our results on women in science we thought we would take the oppurtunity to highlight the work of three of the highly connected female collectors. Below are the infographics we made and the texts we tweeted on these women. More information can be found about these women in these publications [@Fosberg1959; @sastre2003alicia; @Fuglei2006].
 
 ![An infographic illustrating Alicia Lourteig and her place in the collecting network together with a biographical vignette.](./figures/Alicia_Lourteig.png)
+Tweet: French–Argentinian botanist Alicia Lourteig has about 20 plant taxa named after her.
+
 ![An infographic illustrating Hanna Resvoll-Holmsen and her place in the collecting network together with a biographical vignette.](./figures/Hanna_Resvoll_Holmsen.png)
+Tweet: Mary Chase was the first woman elected to the presidency of the Botanical Society of America. She was also a committed suffragist, and was always supporting women in their scientific studies. 
 ![An infographic illustrating Mary Agnes Chase and her place in the collecting network together with a biographical vignette.](./figures/Mary_Agnes_Chase.png)
+Tweet: Hanna Resvoll-Holmsen was a pioneer conservationist and ecologist, advocating for the preservation of natural ecosystems in her paper Om betydningen av det uensartede i våre skoger
+
+Also the tweets included the hashtags #WomenInScience #STEMWomen & #BioHackEU21
 
 # Future work
 
