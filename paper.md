@@ -104,7 +104,7 @@ Also the tweets included the hashtags #WomenInScience #STEMWomen & #BioHackEU21
 # Future work
 
 As more data becomes available there is considerable scope for repeating and expanding this project. We do not anticipate the general trends to change, but we will be able to study the network, and its various sub-networks in much more detail. It may also be valuable to compare these collection networks with citation and co-authorship networks.
-Networks, such as these, will help us understand the provenance of collections, and the biases they contain, thus improving the overall metadata of collections. It would also be useful to collaborate with historians, museologist and social scientists to get a different perspective on what these networks tell us about people and the collection process [@mignan2018metacollecting; fyfe2006sociology; Lourenco2017].
+Networks, such as these, will help us understand the provenance of collections, and the biases they contain, thus improving the overall metadata of collections. It would also be useful to collaborate with historians, museologist and social scientists to get a different perspective on what these networks tell us about people and the collection process [@mignan2018metacollecting; @fyfe2006sociology; @Lourenco2017].
 
 
 # Jupyter notebooks, GitHub repositories and data repositories
