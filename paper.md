@@ -64,13 +64,13 @@ The network contains 3009 nodes and 4330 edges (Fig. 1). The average degree is 2
 
 Table 1: Summary of the collector network in terms of the top five largest clusters with their number, color, size (number of collectors) and their node with the highest degree and the name of the person represented by this node.
 
-| Module number (Gephi) | Module color | Module size (n° nodes) | Highest degree | Name person with highest degree in cluster |
+|Module number (Gephi)|Module color|Module size (# nodes)|Highest degree|Name person with highest degree in cluster|
 |---|---|---|---|---|
-| 90 | Salmon | 259 | 45 | Johannes Lid |
-| 121 | Turquoise | 184 | 34 | Alexandre K. Monro |
-| 11 | Yellow-gold | 163 | 27 | Julian Alfred Steyermark |
-| 65 | Violet | 155 | 24 | Richard Evans Schultes |
-| 45 | Green | 153 | 34 | Matthias Numsen Blytt |
+|90|Salmon|259|45|Johannes Lid|
+|121|Turquoise|184|34|Alexandre K. Monro|
+|11|Yellow-gold|163|27|Julian Alfred Steyermark|
+|65|Violet|155|24| Richard Evans Schultes|
+|45|Green|153|34|Matthias Numsen Blytt|
 
 ![Gender of collectors visualized in the collector network with node size proportional to the weighted degree (i.e. number of people they collected with). Colours: orange=women, blue=men, grey=unknown. The black node is that of Hanna Resvoll-Holmsen (see below)](./figures/NetworkCollectors-gender-infographic_Resvoll-Holmsen.png)
 
