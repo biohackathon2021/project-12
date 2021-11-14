@@ -62,7 +62,7 @@ The network contains 3009 nodes and 4330 edges (Fig. 1). The average degree is 2
 
 ![The network of collector collaborations for specimens identified in Bionomia (https://bionomia.net/). This was created in Gephi [@ICWSM09154]. The size of the nodes is determined by the degree of the node (i.e. number of people they collected with) and the colours of the nodes is determined by a community detection algorithm and coloured for the largest modules within the network [@Blondel2008]](./figures/CollectorsNetwork_Degree-final.png)
 
-Table 1: Summary of the collector network in terms of the top five largest clusters with their number, color, size (number of collectors) and their node with the highest degree and the name of the person represented by this node.
+Table 1: Summary of the collector network in terms of the top five largest clusters with their number, colour, size (number of collectors) and their node with the highest degree and the name of the person represented by this node.
 
 |number|colour|nodes|highest degree|person with highest degree in cluster|
 |---|---|---|---|---|
