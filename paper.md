@@ -4,6 +4,7 @@ tags:
   - Bionomia
   - biodiversity
   - recording behaviour
+  - natural history collection
 authors:
   - name: Sofie Meeus
     orcid: 0000-0003-0715-8647
@@ -30,7 +31,7 @@ affiliations:
    index: 3
 date: 09 November 2021
 bibliography: paper.bib
-authors_short: Meeus et al. (2021) BioHackrXiv
+authors_short: Meeus et al. (2021) Network analysis of specimen co-collection
 group: BioHackrXiv
 event: BioHackathon Europe 2021
 ---
