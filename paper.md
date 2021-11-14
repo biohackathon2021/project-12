@@ -61,7 +61,7 @@ The network contains 3009 nodes and 4330 edges (Fig. 1). The average degree is 2
 
 ![The network of collector collaborations for specimens identified in Bionomia (https://bionomia.net/). This was created in Gephi [@ICWSM09154]. The size of the nodes is determined by the degree of the node (i.e. number of people they collected with) and the colours of the nodes is determined by a community detection algorithm and coloured for the largest modules within the network [@Blondel2008]](./figures/CollectorsNetwork_Degree-final.png)
 
-![Gender of collectors visualized in the collector network with node size proportional to the weighted degree (i.e. number of people they collected with). Colours: orange=women, blue=men, grey=unknown](./figures/NetworkCollectors-gender-infographic_Resvoll-Holmsen.png)
+![Gender of collectors visualized in the collector network with node size proportional to the weighted degree (i.e. number of people they collected with). Colours: orange=women, blue=men, grey=unknown. The black node is that of Hanna Resvoll-Holmsen (see below)](./figures/NetworkCollectors-gender-infographic_Resvoll-Holmsen.png)
 
 Most people collaborate with only with one person, but there are some super-co-collectors who collaborate with many people. The top three men and women with the highest number of collectors is listed in table 1. However, men tend to have many more co-collectors than women (Fig. 3).
 
@@ -98,10 +98,10 @@ Given our results on women in science we thought we would take the oppurtunity t
 Tweet: French–Argentinian botanist Alicia Lourteig has about 20 plant taxa named after her.
 
 ![An infographic illustrating Hanna Resvoll-Holmsen and her place in the collecting network together with a biographical vignette.](./figures/Hanna_Resvoll_Holmsen.png)
-Tweet: Mary Chase was the first woman elected to the presidency of the Botanical Society of America. She was also a committed suffragist, and was always supporting women in their scientific studies. 
+Tweet: Hanna Resvoll-Holmsen was a pioneer conservationist and ecologist, advocating for the preservation of natural ecosystems in her paper Om betydningen av det uensartede i våre skoger
 
 ![An infographic illustrating Mary Agnes Chase and her place in the collecting network together with a biographical vignette.](./figures/Mary_Agnes_Chase.png)
-Tweet: Hanna Resvoll-Holmsen was a pioneer conservationist and ecologist, advocating for the preservation of natural ecosystems in her paper Om betydningen av det uensartede i våre skoger
+Tweet: Mary Chase was the first woman elected to the presidency of the Botanical Society of America. She was also a committed suffragist, and was always supporting women in their scientific studies. 
 
 Also the tweets included the hashtags #WomenInScience #STEMWomen & #BioHackEU21
 
