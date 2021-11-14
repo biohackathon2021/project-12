@@ -64,7 +64,7 @@ The network contains 3009 nodes and 4330 edges (Fig. 1). The average degree is 2
 
 Table 1: Summary of the collector network in terms of the top five largest clusters with their number, color, size (number of collectors) and their node with the highest degree and the name of the person represented by this node.
 
-|Module number (Gephi)|Module color|Module size (# nodes)|Highest degree|Name person with highest degree in cluster|
+|Module number (Gephi)|Module color|Module size (nodes)|Highest degree|Name person with highest degree in cluster|
 |---|---|---|---|---|
 |90|Salmon|259|45|Johannes Lid|
 |121|Turquoise|184|34|Alexandre K. Monro|
