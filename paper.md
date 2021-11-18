@@ -128,7 +128,7 @@ Networks, such as these, will help us understand the provenance of collections, 
 All code and data can be found on [GitHub](https://github.com/elixir-biohackathon-project-12/network-analysis).
 
 # Author contribution statement 
-QG had the concept, acquired funding and supervised the project; SM, LR & MT curated and validated the data and conducted the formal analysis, LR & MT wrote the software; SM and TA created the visualizations, determined the methodology and conducted the investigation. All authors contributed to the writing, reviewing and editing of the paper.
+QG had the concept, acquired funding and supervised the project; SM, LR & MT curated and validated the data and conducted the formal analysis, LR & MT wrote the software; SM and TA created the visualizations; SM determined the methodology and conducted the investigation. All authors contributed to the writing, reviewing and editing of the paper.
 
 # Acknowledgements
 The authors thank the organizers BioHackathon-Europe for their support and excellent organisation. This work was also facilitated by the Research Foundation – Flanders research infrastructure under grant number FWO I001721N and the BiCIKL project of the European Union's Horizon 2020 Research and Innovation action under grant agreement No 101007492.
