@@ -72,7 +72,7 @@ Table 1: Summary of the collector network in terms of the top five largest clust
 |65|Violet|155|24|[Richard Evans Schultes](https://en.wikipedia.org/wiki/Richard_Evans_Schultes)|
 |45|Green|153|34|[Matthias Numsen Blytt](https://en.wikipedia.org/wiki/Matthias_Numsen_Blytt)|
 
-![Gender of collectors visualized in the collector network with node size proportional to the weighted degree (i.e. number of people they collected with). Colours: orange=women, blue=men, grey=unknown. The black node is that of [Hanna Resvoll-Holmsen](https://en.wikipedia.org/wiki/Hanna_Resvoll-Holmsen) (see below)](./figures/NetworkCollectors-gender-infographic_Resvoll-Holmsen.png)
+![Gender of collectors visualized in the collector network with node size proportional to the weighted degree (i.e. number of people they collected with). Colours: orange=women, blue=men, grey=unknown. The black node is that of Hanna Resvoll-Holmsen (see below)](./figures/NetworkCollectors-gender-infographic_Resvoll-Holmsen.png)
 
 Most people collaborate with only with one person, but there are some super-co-collectors who collaborate with many people. The top three men and women with the highest number of collectors is listed in table 2. However, men tend to have many more co-collectors than women (Fig. 3).
 
